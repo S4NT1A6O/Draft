@@ -15,10 +15,10 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author USUARIO
+ * @author eideard.hm
  */
-@WebServlet(name = "Hola", urlPatterns = {"/Hola"})
-public class Hola extends HttpServlet {
+@WebServlet(name = "Controlador2", urlPatterns = {"/Controlador2"})
+public class Controlador2 extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -37,10 +37,10 @@ public class Hola extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet Hola</title>");            
+            out.println("<title>Servlet Controlador2</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet Hola at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet Controlador2 at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -58,7 +58,7 @@ public class Hola extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        request.getRequestDispatcher("/JSP/Hola.jsp").forward(request, response);
+        request.getRequestDispatcher("/JSP/newjsp002.jsp").forward(request, response);
     }
 
     /**
