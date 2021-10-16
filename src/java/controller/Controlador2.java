@@ -58,21 +58,20 @@ public class Controlador2 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        request.getRequestDispatcher("/JSP/newjsp002.jsp").forward(request, response);
+        request.getRequestDispatcher("/JSP/newjsp0050.jsp").forward(request, response);
     }
-
+    
     /**
-     * Handles the HTTP <code>POST</code> method.
      *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
      */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        request.getRequestDispatcher("/JSP/newjsp0050.jsp").forward(request, response);
     }
 
     /**
